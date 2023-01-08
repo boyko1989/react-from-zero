@@ -1,6 +1,6 @@
-const App = ({ initialButtonText }) => {
+const App = ({ initialButtonText, initialButtonClass }) => {
   const [buttonText, setButtonText] = React.useState(initialButtonText);
-  const [buttonClass, setButtonClass] = React.useState("");
+  const [buttonClass, setButtonClass] = React.useState(initialButtonClass);
 
   const onButtonClick = () => {
     setButtonText("Hello from React");
@@ -18,4 +18,4 @@ const App = ({ initialButtonText }) => {
 
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
-root.render(<App initialButtonText="Click Me" />);
+root.render(<App initialButtonText="Click Me" initialButtonClass="" />);
