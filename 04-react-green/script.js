@@ -1,5 +1,4 @@
-const App = (props) => {
-  const { initialButtonText } = props;
+const App = ({ initialButtonText }) => {
   const [buttonText, setButtonText] = React.useState(initialButtonText);
   const [buttonClass, setButtonClass] = React.useState("");
 
